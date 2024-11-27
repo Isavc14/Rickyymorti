@@ -1,0 +1,129 @@
+{
+	"id": "56a794cb-1d45-4c14-af04-f87897150e2e",
+	"name": "Rick Y Morty",
+	"timestamp": "2024-11-27T17:59:04.829Z",
+	"collection_id": "39657962-45f5ad9c-8e23-4706-80b3-b3817bf7159d",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-27T17:59:01.529Z",
+	"totalFail": 9,
+	"results": [
+		{
+			"id": "3342bc4d-a2c9-496c-91d4-065ff1409449",
+			"name": "Todos los personajes",
+			"url": "https://rickandmortyapi.com/api/character",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				336,
+				93,
+				62
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "2d8e4256-d933-4a45-a5de-6e4bfd590633",
+			"name": "Solo un personaje",
+			"url": "https://rickandmortyapi.com/api/character/22",
+			"time": 51,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Validate character name": false,
+				"Response time is less than 1000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Validate character name": {
+					"pass": 0,
+					"fail": 5
+				},
+				"Response time is less than 1000ms": {
+					"pass": 3,
+					"fail": 2
+				}
+			},
+			"times": [
+				80,
+				77,
+				51
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Validate character name": false,
+					"Response time is less than 1000ms": true
+				},
+				{
+					"Status code is 200": true,
+					"Validate character name": false,
+					"Response time is less than 1000ms": true
+				},
+				{
+					"Status code is 200": true,
+					"Validate character name": false,
+					"Response time is less than 1000ms": true
+				}
+			]
+		},
+		{
+			"id": "3de3936c-4d07-4d05-b36c-31400b812488",
+			"name": "Filtrar personajes",
+			"url": "https://rickandmortyapi.com/api/character/?status=alive",
+			"time": 72,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				259,
+				62,
+				72
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 3,
+	"totalTime": 1092,
+	"collection": {
+		"requests": [
+			{
+				"id": "3342bc4d-a2c9-496c-91d4-065ff1409449",
+				"method": "GET"
+			},
+			{
+				"id": "2d8e4256-d933-4a45-a5de-6e4bfd590633",
+				"method": "GET"
+			},
+			{
+				"id": "3de3936c-4d07-4d05-b36c-31400b812488",
+				"method": "GET"
+			}
+		]
+	}
+}
